@@ -52,7 +52,7 @@ def weather(message):
     temp = (f - 32) * (5/9)
     answer = f"Температура в градусах по Цельсию: {temp}"
     bot.send_message(message.chat.id,  answer)
-    speak(answer)
+#    speak(answer)
 @bot.message_handler(commands=["C"])
 def weather(message):
     words = message.text.split(maxsplit=1)
